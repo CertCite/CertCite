@@ -336,15 +336,12 @@ p{
   color: var(--text-white);
 }
 
-<<<<<<< Updated upstream
+
 .header_wrapper .menu-navbar-nav{
   text-align: center;
 
   padding-bottom: 15px;
-<<<<<<< HEAD
-
-=======
-=======
+}
 .main-btn {
   display: inline-block;
   border-radius: 50px;
@@ -391,6 +388,5 @@ p{
 
 .banner_wrapper span{
   opacity: 100%;
->>>>>>> Stashed changes
 
 }
