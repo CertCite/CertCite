@@ -341,3 +341,52 @@ p{
 
   padding-bottom: 15px;
 }
+#explore {
+  margin: 80px;
+  padding: 20px;
+  justify-content: center; 
+}
+
+/* about us sectino css */
+
+#about {
+   margin: 80px;
+   padding: 20px;
+}
+.section_title {
+    text-align: center;
+    font-weight: 400;
+    color: var(--primary-color);
+
+}
+
+.explore .card  {
+  border: none; 
+  background: transparent;
+  border-radius: 0.9375rem;
+}
+.explore .card img{
+  border-radius: 0.9375rem;
+  object-fit: cover;
+
+}
+ h2{
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-top: 15px;
+  
+}
+.explore p{
+  color: black;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 15px;
+  padding: auto;
+}
+#explore {
+
+}
+
+
