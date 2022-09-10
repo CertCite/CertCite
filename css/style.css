@@ -336,8 +336,57 @@ p{
   color: var(--text-white);
 }
 
+<<<<<<< Updated upstream
 .header_wrapper .menu-navbar-nav{
   text-align: center;
 
   padding-bottom: 15px;
+=======
+.main-btn {
+  display: inline-block;
+  border-radius: 50px;
+  transition:all .4s ease-in-out ;
+  padding: 10px 27px;
+  background-color: transparent;
+  border: 2px solid var(--grey-color);
+  color: var(--text-grey);
+  font-weight:500 ;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.main-btn:hover {
+
+  background-color: var(--primary-color);
+  border-color: var(--primary-color)
+  ;
+  color: var(--text-white);
+
+}
+
+.banner_wrapper{
+  width: 100%;
+  height: auto;
+  min-height: 650px;
+  background-image: url(../images/4905784.jpg);
+  opacity: 20%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 200px 0 100px 0;
+}
+.banner_wrapper span img{
+  display: inline;
+  width: 650px;
+  margin-left: 500px;
+  margin-right: 20px;
+
+}
+
+.banner_wrapper span{
+  opacity: 100%;
+>>>>>>> Stashed changes
 }
