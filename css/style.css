@@ -306,6 +306,11 @@ h1{
   color: var(--primary-text);
   margin-bottom: 20px;
 }
+h2{
+  font-size: 54px;
+  line-height: 60px;
+  color: black;
+}
 p{
   color: var(--text-grey);
   font-size: 16px;
@@ -385,8 +390,36 @@ p{
   margin-top: 15px;
   padding: auto;
 }
-#explore {
+
+/* about section  */
+
+.about-section{
+  
+  background-color: var(--primary-color);
+}
+#about{
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  
+}
+.about-section .carousel-item {
+  margin-top: 3rem;
+  padding: 10rem 3.25rem;
+  background-color: var(--bg-white);
+  border-radius: 0.9375rem;
+  text-align: center;
 
 }
+#about h2{
+  padding: 15px;
+  margin-top: 15px;
+  color: var(--bg-white);
+
+}
+h4{
+  color: black;
+}
+
 
 
