@@ -89,11 +89,7 @@ body {
   color: black;
 }
 
-.signup-button {
 
-  padding: 5px;
-  margin: 5px;
-}
 
 .login-button {
   padding: 5px;
@@ -101,7 +97,6 @@ body {
 
 }
 
-.signup-button,
 .login-button {
   display: inline-block;
   border-radius: 50px;
@@ -117,7 +112,7 @@ body {
   text-decoration: none;
 }
 
-.signup-button,
+
 .login-button:hover {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
@@ -288,4 +283,61 @@ color: var(--primary-color);
 .footer-menu li a {
 font-size: 14px;
 color: var(--text-grey);
+}
+
+
+.banner_wrapper{
+  width: 100%;
+  height: auto;
+  min-height: 1000px;
+  background-image: url(../images/Online\ learning-pana.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: 650px;
+  background-attachment: fixed;
+  padding: 200px 0 100px 0;
+}
+
+
+h1{
+  font-size: 54px;
+  line-height: 60px;
+  font-weight: 800;
+  color: var(--primary-text);
+  margin-bottom: 20px;
+}
+p{
+  color: var(--text-grey);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.main-btn {
+  display: inline-block;
+  border-radius: 50px;
+  transition: all .4s ease-in-out;
+  padding: 10px 27px;
+  background-color: transparent;
+  border: 2px solid var(--grey-color);
+  color: var(--text-grey);
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.main-btn:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color)
+  ;
+  color: var(--text-white);
+}
+
+.header_wrapper .menu-navbar-nav{
+  text-align: center;
+
+  padding-bottom: 15px;
 }
