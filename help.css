@@ -24,7 +24,7 @@
 
 body {
   font-family: var(--primary-font);
-  background-color: var(--bg-white);
+  background-color: var(--primary-color);
   margin: 0;
   padding: 0;
 }
@@ -117,11 +117,6 @@ body {
   background-color: var(--primary-color);
   border-color: var(--primary-color);
   color: var(--text-white);
-}
-.con{
-  width: 100%;
-  height: 100vh;
-  background-color: var(--text-grey);
 }
 
 ul {
@@ -285,140 +280,66 @@ color: var(--text-grey);
 }
 
 
-.banner_wrapper{
-  width: 100%;
-  height: auto;
-  min-height: 1000px;
-  background-image: url(../images/Online\ learning-pana.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-x: 650px;
-  background-attachment: fixed;
-  padding: 200px 0 100px 0;
-}
-
-
-h1{
-  font-size: 54px;
-  line-height: 60px;
-  font-weight: 800;
-  color: var(--primary-text);
-  margin-bottom: 20px;
-}
-h2{
-  font-size: 54px;
-  line-height: 60px;
-  color: black;
-}
-p{
-  color: var(--text-grey);
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 1px;
-  font-weight: 400;
-}
-
-.main-btn {
-  display: inline-block;
-  border-radius: 50px;
-  transition: all .4s ease-in-out;
-  padding: 10px 27px;
-  background-color: transparent;
-  border: 2px solid var(--grey-color);
-  color: var(--text-grey);
-  font-weight: 500;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-decoration: none;
-}
-
-.main-btn:hover {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color)
-  ;
-  color: var(--text-white);
-}
-
-.header_wrapper .menu-navbar-nav{
+h1 {
+  font-size: clamp(20px, 4vw, 30px);
+  line-height: 1.2;
+  margin-bottom: 40px;
+  margin-top: 150px;
   text-align: center;
-
-  padding-bottom: 15px;
-}
-#explore {
-  margin: 80px;
-  padding: 20px;
-  justify-content: center; 
-}
-
-/* about us sectino css */
-
-#about {
-   margin: 80px;
-   padding: 20px;
-}
-.section_title {
-    text-align: center;
-    font-weight: 400;
-    color: var(--primary-color);
-
-}
-
-.explore .card  {
-  border: none; 
-  background: transparent;
-  border-radius: 0.9375rem;
-}
-.explore .card img{
-  border-radius: 0.9375rem;
-  object-fit: cover;
-
-}
- h2{
-  font-size: 40px;
-  text-align: center;
-  font-weight: 500;
-  color: var(--primary-color);
-  margin-top: 15px;
-  
-}
-.explore p{
-  color: black;
-  font-weight: 300;
-  text-align: center;
-  margin-top: 15px;
-  padding: auto;
-}
-
-/* about section  */
-
-.about-section{
-  
-  background-color: var(--primary-color);
-}
-#about{
-  margin: 0;
-  padding: 0;
-  object-fit: cover;
-  
-}
-.about-section .carousel-item {
-  margin-top: 3rem;
-  padding: 10rem 3.25rem;
-  background-color: var(--bg-white);
-  border-radius: 0.9375rem;
-  text-align: center;
-
-}
-#about h2{
-  padding: 15px;
-  margin-top: 15px;
   color: var(--bg-white);
-
 }
-h4{
-  color: black;
+main {
+  max-width: 520px;
+  margin: 0 auto;
 }
 
+summary {
+  font-size: 1.25rem;
+  font-weight: 600;
+  background-color: var(--grey-color);
+  background-image: linear-gradient(90deg, var(--bg-white), var(--bg-white));
+  color: var(--bg-whiter);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  border-radius: 0.25rem;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
 
+p {
+  text-align: left;
+}
 
+details[open] summary~* {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+      opacity: 0;
+      margin-top: -10px
+  }
+
+  100% {
+      opacity: 1;
+      margin-top: 0px
+  }
+}
+
+details>summary::after {
+  position: absolute;
+  content: "+";
+  right: 20px;
+}
+
+details[open]>summary::after {
+  position: absolute;
+  content: "-";
+  right: 20px;
+}
+
+details>summary::-webkit-details-marker {
+  display: none;
+}
