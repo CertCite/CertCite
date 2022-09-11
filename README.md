@@ -10,7 +10,8 @@ A Place where you get certificate for all the things you know. It is a simple ea
 Best platform for certification, getting credibility and enhancing your skills.
 
 # Simple steps to get certificate
-### STEP 1
+<img src="https://github.com/CertCite/.github/blob/main/profile/steps.png" alt="Steps" width="800" />
+<hr>
 
 We learn a lot by ourselves outside school, college and paid educational sites and It’s sad when you have skills and knowledge but don’t know how to prove it.
 That’s why we are here!!! Giving you credibility by providing certificate for all your skill set through test score for free, just give a test, score good and bravo you will have your certificate for skill you possess.
