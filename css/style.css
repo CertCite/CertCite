@@ -78,6 +78,9 @@ body {
   bottom: 0;
 
 }
+.banner_wrapper p {
+  line-height: 8px;
+}
 
 .header_wrapper .nav-item .nav-link:active::after,
 .header_wrapper .nav-item .nav-link:hover::after {
@@ -110,6 +113,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-decoration: none;
+  
 }
 
 
