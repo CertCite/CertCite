@@ -245,10 +245,10 @@
                                     <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
                                 </div>
                                 <div class="subscribe-form">
-                                    <form action="#">
-                                        <input type="text" placeholder="Email Address">
-                                        <button><i class="fab fa-telegram-plane"></i></button>
-                                    </form>
+                                    <div action="#">
+                                        <input type="email" placeholder="Email Address">
+                                        <button id="saveemailbtn"><i class="fab fa-telegram-plane"></i></button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -270,6 +270,44 @@
     </section>
     <!-- footer section ends -->
 
+    <!-- contact us backend -->
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+        import { getDatabase, set, ref, update, push, child } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyATx-4jkS0DmX-t4p-CBQ7TG4augFobSG0",
+              authDomain: "test-app-61c66.firebaseapp.com",
+              projectId: "test-app-61c66",
+              storageBucket: "test-app-61c66.appspot.com",
+              messagingSenderId: "1086554788155",
+              appId: "1:1086554788155:web:c744890a2ce590088f671e",
+              measurementId: "G-RKHQP15V29"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+
+        saveemailbtn.addEventListener("click", writeUserData);
+
+        const cemail = push(child(ref(database),'contact')).key;
+
+  function writeUserData() {
+         const dt = new Date();
+        set(ref(database, 'contact/' + cemail), {
+            mail : document.getElementById('email').value,
+            time : dt,
+        });
+    }
+    </script>
+
+       <!-- contact us backend end here--> 
     
     <!-- Optional JavaScript; choose one of the two! -->
 
