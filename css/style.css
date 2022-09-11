@@ -421,18 +421,27 @@ p{
 }
 .about-section .carousel-item {
   margin-top: 3rem;
-  padding: 10rem 3.25rem;
+  padding: 8rem 15rem;
+  
   background-color: var(--bg-white);
   border-radius: 0.9375rem;
   text-align: center;
   margin-bottom: 3rem;
   width: 100%;
-  height: 100%;
-  /* display:flexbox; */
-  /* justify-content: space-between; */
-  /* align-items: center; */
-  flex-direction: column;
+  height: 80vh;
+  overflow: hidden;
+  
+ 
+  /* display:flexbox;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; */
 
+}
+.carousel-control-prev-icon,.carousel-control-next-icon{
+  background-color: #A85CF9;
+  border-radius: 50%;
+  
 }
 
 
@@ -450,6 +459,45 @@ h4{
   
 }
 
+.about-section .carousel-item img{
+  object-fit: cover;
+  size: 80vh;
+  overflow: hidden;
+ 
+}
+
+
+.about-section .carousel-item .img-area{
+  /* position: relative; */
+  width: auto;
+  height: 100vh;
+  object-fit: cover;
+  border: 5px solid #fff;
+  overflow: hidden;
+  top: 15px;
+  left: 125px;
+  border-radius: 25px;
+  margin: 0;
+}
+.about-section .carousel-item .img-area img{
+  width: 100%;
+  margin-right: 150px;
+  
+}
+
+.about-section .carousel-item image{
+  margin-top: 3rem;
+  /* padding: 8rem 15rem; */
+  
+  background-color: var(--bg-white);
+  border-radius: 0.9375rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  
+}
 
 
 
