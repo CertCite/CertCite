@@ -246,7 +246,7 @@
                                 </div>
                                 <div class="subscribe-form">
                                     <div action="#">
-                                        <input type="email" placeholder="Email Address">
+                                        <input type="email" id="contactemail" placeholder="Email Address">
                                         <button id="saveemailbtn"><i class="fab fa-telegram-plane"></i></button>
                                     </div>
                                 </div>
@@ -293,16 +293,16 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
         const database = getDatabase(app);
-
+        const auth = getAuth();
         saveemailbtn.addEventListener("click", writeUserData);
 
-        const cemail = push(child(ref(database),'contact')).key;
+        const memail = push(child(ref(database),'contactus')).key;
 
   function writeUserData() {
-         const dt = new Date();
-        set(ref(database, 'contact/' + cemail), {
-            mail : document.getElementById('email').value,
-            time : dt,
+        
+        set(ref(database, 'contactus/' + memail), {
+            mail : document.getElementById('contactemail').value,
+            alert("mail sent successfully");
         });
     }
     </script>
