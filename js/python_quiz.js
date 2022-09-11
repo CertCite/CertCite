@@ -61,9 +61,9 @@ restart_quiz.onclick = ()=>{
 }
 
 // if quitQuiz button clicked
-quit_quiz.onclick = ()=>{
-    window.location.reload(); //reload the current window
-}
+// quit_quiz.onclick = ()=>{
+//     window.location.reload(); //reload the current window
+// }
 
 const next_btn = document.querySelector("footer .next_btn");
 const bottom_ques_counter = document.querySelector("footer .total_que");
@@ -210,3 +210,75 @@ function queCounter(index){
     let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
+// creating an array and passing the number, questions, options, and answers
+let questions = [
+    {
+    numb: 1,
+    question: "Who developed Python Programming Language?",
+    answer: "Guido van Rossum",
+    options: [
+      "Wick van Rossum",
+      "Rasmus Lerdorf",
+      "Guido van Rossum",
+      "Niene Stom"
+    ]
+  },
+    {
+    numb: 2,
+    question: "Is Python code compiled or interpreted?",
+    answer: "Python code is both compiled and interpreted",
+    options: [
+      "Python code is both compiled and interpreted",
+      "Python code is neither compiled nor interpreted",
+      "Python code is only compiled",
+      "Python code is only interpreted"
+    ]
+  },
+    {
+    numb: 3,
+    question: "Which of the following character is used to give single-line comments in Python?",
+    answer: "#",
+    options: [
+      "//",
+      "#",
+      "*",
+      "!"
+    ]
+  },
+    {
+    numb: 4,
+    question: "Which keyword is used for function in Python language?",
+    answer: "Def",
+    options: [
+      "Function",
+      "Def",
+      "Fun",
+      "Define"
+    ]
+  },
+    {
+    numb: 5,
+    question: "What does pip stand for python?",
+    answer: "Preferred Installer Program",
+    options: [
+      "unlimited length",
+      "all private members must have leading and trailing underscorese",
+      "Preferred Installer Program",
+      "none of the mentionede"
+    ]
+  },
+  // you can uncomment the below codes and make duplicate as more as you want to add question
+  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
+
+  //   {
+  //   numb: 6,
+  //   question: "Your Question is Here",
+  //   answer: "Correct answer of the question is here",
+  //   options: [
+  //     "Option 1",
+  //     "option 2",
+  //     "option 3",
+  //     "option 4"
+  //   ]
+  // },
+];
