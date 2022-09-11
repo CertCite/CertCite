@@ -349,6 +349,7 @@ p{
   margin: 80px;
   padding: 20px;
   justify-content: center; 
+  min-height:min-content;
 }
 
 /* about us sectino css */
@@ -365,7 +366,8 @@ p{
 }
 
 .explore .card  {
-  border: none; 
+  border: 1;
+  box-shadow:1px 1px  5px 2px #888888;
   background: transparent;
   border-radius: 0.9375rem;
 }
@@ -384,10 +386,19 @@ p{
 }
 .explore p{
   color: black;
-  font-weight: 300;
-  text-align: center;
-  margin-top: 15px;
-  padding: auto;
+  font-weight: 500;
+  font-size: 17px;
+  text-align: left;
+
+}
+.explore button {
+  padding: 8px;
+
+}
+.explore .text-w{
+  
+  margin: 15px;
+  padding: 5px;
 }
 
 /* about section  */
@@ -408,17 +419,14 @@ p{
   background-color: var(--bg-white);
   border-radius: 0.9375rem;
   text-align: center;
+  margin-bottom: 3rem;
 
 }
-#about h2{
-  padding: 15px;
-  margin-top: 15px;
-  color: var(--bg-white);
 
-}
 h4{
   color: black;
 }
+
 
 
 
