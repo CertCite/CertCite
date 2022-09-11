@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Python Quiz</title>
+    <title>Java Quiz</title>
     <link rel="stylesheet" href="css/quiz.css" />
 
     <link
@@ -80,20 +80,6 @@
 
     <!-- Result Box -->
     <div class="result_box">
-<<<<<<< Updated upstream
-        <div class="icon">
-            <i class="fas fa-crown"></i>
-        </div>
-        <div class="complete_text">You've completed the Quiz!</div>
-        <div class="score_text">
-            <!-- Here I've inserted Score Result from JavaScript -->
-        </div>
-        <div class="buttons">
-            <button class="restart">Replay Quiz</button>
-        
-            <button class="quit" id="cetificatebtn">Submit</button>
-        </div>
-=======
       <div class="icon">
         <i class="fas fa-crown"></i>
       </div>
@@ -106,72 +92,11 @@
 
         <button class="quit" onclick="">Submit</button>
       </div>
->>>>>>> Stashed changes
     </div>
 
     <!-- Inside this JavaScript file I've inserted Questions and Options only -->
 
     <!-- Inside this JavaScript file I've coded all Quiz Codes -->
-    <script src="js/python_quiz.js"></script>
-<<<<<<< Updated upstream
-    <script type="module">
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
-  import { getDatabase, set, ref, update, push, child } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
-  import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-auth.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
-
-  // Your web app's Firebase configuration
-  const firebaseConfig = {
-    apiKey: "AIzaSyATx-4jkS0DmX-t4p-CBQ7TG4augFobSG0",
-        authDomain: "test-app-61c66.firebaseapp.com",
-        projectId: "test-app-61c66",
-        storageBucket: "test-app-61c66.appspot.com",
-        messagingSenderId: "1086554788155",
-        appId: "1:1086554788155:web:c744890a2ce590088f671e",
-        measurementId: "G-RKHQP15V29"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const database = getDatabase(app);
-  const auth = getAuth();
-
-   cetificatebtn.addEventListener("click", entername);
-
-   const cert = push(child(ref(database),'certificates')).key;
-
-        function entername(){
-            var nameid = prompt("enter your name");
-            var  mailid = prompt("enter your email in which you want to recieve certificate");
-
-            
-
-            
-            set(ref(database, 'certificates/' + cert), {
-            
-            name : nameid,
-            mailid: mailid,
-         });
-        }
-    </script>
-
- 
-
-
-
-
-
-
-   
-
-
-
-
-
-</body>
-</html>
-=======
+    <script src="js/java_quiz.js"></script>
   </body>
 </html>
->>>>>>> Stashed changes
