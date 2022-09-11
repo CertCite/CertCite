@@ -1,5 +1,5 @@
 # CertCite
-### Get certified for all you know
+### Explore Learn Grow
 
 # Live Demo
 
